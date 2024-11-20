@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" CONTENT="Javascript Editor 2">
+<TITLE> "一个自我介绍" </TITLE>
+</HEAD>
+
+<style>
+	@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+	body{
+      font-family: Arial, 仿宋;
+      line-height: 1.6;
+      margin: -2 0;
+      padding: 0;
+      background-color: #B0C4DE;
+    }
+    .container {
+      display: flex;
+      align-items: flex-start;
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	  animation: fadeIn 0.5s ease-in-out;
+    }
+    .text {
+      flex: 1.1;
+      padding-right: 20px;
+	  padding-left: 20px;
+    }
+    .image {
+      flex: 1;
+	  padding-left: 60px;
+	  animation: fadeIn 1.5s ease-in-out;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 30px;
+      font-family: 宋体;
+	  animation: fadeIn 1s ease-in-out;
+    }
+    .vice_title {
+      font-weight: bold;
+      font-size: 40px;
+      font-family: 黑体;
+	  animation: fadeIn 1.5s ease-in-out;
+    }
+    .intro {
+      font-weight: bold;
+	  font-size: 20px;
+      font-family: 楷体;
+	  animation: fadeIn 2s ease-in-out;
+    }
+    img{
+      width: 80%;
+      height: auto;
+      display: block;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin: 60px 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    button{
+      background-color: #1E90FF;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+	  animation: fadeIn 2.5s ease-in-out;
+    }
+    button:hover {
+      background-color: #0056B3;
+    }
+</style>
+
+
+
+<BODY>
+<div class="container">
+	<div class="text">
+	    <h1 class="title">我的自我介绍</h1>
+        <p class="vice_title">&nbsp;杜柯言</p>
+        <p class="intro">&nbsp;&nbsp;湖北宜昌人<br>&nbsp;&nbsp;生于2006年10月03日<br>&nbsp;&nbsp;目前就读于华中科技大学计算机科学与技术学院，来自2407班<br>&nbsp;&nbsp;腾讯创新俱乐部的一员</p>
+	    
+		<button onclick="showMore1()">兴趣技能</button>
+		&nbsp;&nbsp;<button onclick="showMore2()">性格特点</button>
+        &nbsp;&nbsp;<button onclick="showMore3()">未来的期望</button>
+		
+		<div id="more-info1" style="display: none;">
+          <h2><ul>
+            <li>羽毛球</li>
+            <li>钢琴</li>
+            <li>书法</li>
+            <li>看电影</li>
+          </ul></h2>
+		</div>
+
+        <div id="more-info2" style="display: none;">
+          <h2><ul>
+            <li>比较冷静</li>
+            <lii e二象性</li>
+            <li>“重度拖延”</li>
+          </ul></h2>
+		</div>
+	
+        <div id="more-info3" style="display: none;">
+          <h2><ul>
+		    <li>活着</li>
+            <li>身体、心理健康</li>
+            <li>能达到专业要求并拓展自我</li>
+          </ul></h2>
+		</div>
+    </div>
+	
+	<div class="image">
+         <br><img src="个人照片.jpg" alt="我的照片">
+    </div>
+
+</div>
+
+
+
+<script>
+    function showMore1() {
+      const moreInfo1 = document.getElementById('more-info1'),moreInfo2 = document.getElementById('more-info2'),moreInfo3 = document.getElementById('more-info3');
+      if (moreInfo1.style.display === 'none') {
+        moreInfo1.style.display = 'block';
+		moreInfo2.style.display = 'none';
+		moreInfo3.style.display = 'none';
+      } else {
+        moreInfo1.style.display = 'none';
+		moreInfo2.style.display = 'none';
+		moreInfo3.style.display = 'none';
+      }
+    }
+    function showMore2() {
+      const moreInfo1 = document.getElementById('more-info1'),moreInfo2 = document.getElementById('more-info2'),moreInfo3 = document.getElementById('more-info3');
+      if (moreInfo2.style.display === 'none') {
+        moreInfo1.style.display = 'none';
+        moreInfo2.style.display = 'block';
+		moreInfo3.style.display = 'none';
+      } else {
+        moreInfo1.style.display = 'none';
+		moreInfo2.style.display = 'none';
+		moreInfo3.style.display = 'none';
+      }
+    }
+    function showMore3() {
+      const moreInfo1 = document.getElementById('more-info1'),moreInfo2 = document.getElementById('more-info2'),moreInfo3 = document.getElementById('more-info3');
+      if (moreInfo3.style.display === 'none') {
+        moreInfo1.style.display = 'none';
+		moreInfo2.style.display = 'none';
+		moreInfo3.style.display = 'block';
+      } else {
+        moreInfo1.style.display = 'none';
+		moreInfo2.style.display = 'none';
+		moreInfo3.style.display = 'none';
+      }
+    }
+</script>
+
+
+</BODY>
+</HTML>
